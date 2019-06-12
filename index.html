@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="main.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+        <title>Kalkulator BMI</title>
+    </head>
+
+    <body>
+
+        <main class="main">
+            <h1>KALKULATOR BMI</h1>
+            <section class="form">
+                <div class="form__group">
+                    <input type="number" id="weight" class="form__field" placeholder="Waga w kg">
+                    <label for="weight" class="form__label">Waga w kg</label>
+                </div>
+                <div class="form__group">
+                    <input type="number" id="height" class="form__field" placeholder="Your Email">
+                    <label for="height" class="form__label">Wzrost w cm</label>
+                </div>
+                <input type="submit" id="count__btn" class="form__submit" value="Oblicz BMI">
+            </section>
+            <section id="result" class="result"></section>
+            <section class="bmi_indicator">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Wartość</th>
+                            <th>Co oznacza?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>BMI &lt; 18,5</td>
+                            <td>Niedowaga</td>
+                        </tr>
+                        <tr>
+                            <td>18,5 &le; BMI &le; 24,9</td>
+                            <td>Waga prawidłowa</td>
+                        </tr>
+                        <tr>
+                            <td>25 &le; BMI &le; 30</td>
+                            <td>Nadwaga</td>
+                        </tr>
+                        <tr>
+                            <td>BMI &gt; 30</td>
+                            <td>Otyłość</td>
+                        </tr>
+                        <tr>
+                            <td>BMI &gt; 35</td>
+                            <td>Otyłość II stopnia</td>
+                        </tr>
+                        <tr>
+                            <td>BMI &gt; 40</td>
+                            <td>Olbrzymia otyłość</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <script src="app.js"></script>
+    </body>
+
+</html>

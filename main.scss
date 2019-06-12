@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #9b6f36;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Lato', sans-serif;
+
+    h1{
+        padding: 50px 0 50px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    
+    // form items
+
+    .form__group{
+        position: relative;
+        padding: 15px 0 0;
+        margin-top: 10px;
+
+        .form__field {
+            font-family: inherit;
+            width: 100%;
+            border: 0;
+            border-bottom: 1px solid #d2d2d2;
+            outline: 0;
+            font-size: 16px;
+            color: #212121;
+            padding: 7px 0;
+            background: transparent;
+            transition: border-color 0.2s;
+        }
+          
+        .form__field::placeholder {
+            color: transparent;
+        }
+          
+        .form__field:placeholder-shown ~ .form__label {
+            font-size: 16px;
+            top: 20px;
+            cursor: text;
+        }
+          
+        label,
+        .form__field:focus ~ .form__label {
+            position: absolute;
+            top: 0;
+            display: block;
+            transition: 0.2s;
+            font-size: 12px;
+            color: #212121;
+        }
+          
+        .form__field:focus ~ .form__label {
+            color: #3498db;
+        }
+          
+        .form__field:focus {
+            padding-bottom: 6px;
+            border-bottom: 2px solid #3498db;
+        }
+    }
+
+    .form__submit{
+        padding: 10px;
+        margin-top: 15px;
+        width: 100%;
+        border: 0;
+        outline: none;
+        background: #3498db;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: box-shadow .2s ease;
+    }
+
+    .form__submit:hover{
+        box-shadow: 0px 0px 2px #000;
+    }
+
+    .result{
+        margin: 10px 0 0 0;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    // table with ranges
+
+    table{
+        margin: 50px auto;
+        border-collapse: collapse;
+        box-shadow: 2px 2px 5px #000;
+
+        tr:nth-of-type(odd){
+            background: #eee;
+        }
+
+        tr:nth-of-type(even){
+            background: #fff;
+        }
+
+        th{
+            background: #3498db;
+            color: #fff;
+        }
+
+        td, th{
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            font-size: 18px;
+        }
+
+        td:first-of-type, th:first-of-type{
+            border-right: 1px solid #ccc;
+        }
+    }
+}
+  
+  
